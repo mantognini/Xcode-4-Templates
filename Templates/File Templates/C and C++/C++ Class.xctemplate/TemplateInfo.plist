@@ -40,19 +40,15 @@ subject to the following restrictions:
 
     <key>Kind</key>
     <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
-    
-    <!-- choose the logo of the template -->
-    <key>MainTemplateFile</key>
-    <string>___FILEBASENAME___.cpp</string>
 
     <key>Options</key>
     <array>
         <!-- product name : based on the class name -->
         <dict>
-            <key>Default</key>
-            <string>___VARIABLE_className:identifier___</string>
             <key>Identifier</key>
             <string>productName</string>
+            <key>Default</key>
+            <string>___VARIABLE_className:identifier___</string>
             <key>Type</key>
             <string>static</string>
         </dict>
@@ -60,11 +56,12 @@ subject to the following restrictions:
         <!-- class name -->
         <dict>
             <key>Description</key>
-            <string>The name of the class to create</string>
-            <key>Identifier</key>
-            <string>className</string>
+            <string>The name of the class to create.</string>
             <key>Name</key>
             <string>Class Name</string>
+
+            <key>Identifier</key>
+            <string>className</string>
             <key>NotPersisted</key>
             <false/>
             <key>Required</key>
@@ -72,6 +69,40 @@ subject to the following restrictions:
             <key>Type</key>
             <string>text</string>
         </dict>
+
+        <!-- Inheritance ? Yes or No -->
+        <!-- This will load the file in "Yes" or "No" directories -->
+        <dict>
+            <key>Name</key>
+            <string>Inheritance ?</string>
+            <key>Description</key>
+            <string>Does the new class inherite from a superclass ?</string>
+
+            <key>Identifier</key>
+            <string>inheritanceBool</string>
+            <key>Type</key>
+            <string>popup</string>
+            <key>Default</key>
+            <string>No</string>
+            <key>Values</key>
+            <array>
+                <string>No</string>
+                <string>Yes</string>
+            </array>
+        </dict>
+
+        <dict>
+            <key>Name</key>
+            <string>Superclass</string>
+            <key>Description</key>
+            <string>What is its superclass ?</string>
+
+            <key>Identifier</key>
+            <string>superclassName</string>
+            <key>Type</key>
+            <string>text</string>
+        </dict>
+
     </array>
 </dict>
 </plist>
