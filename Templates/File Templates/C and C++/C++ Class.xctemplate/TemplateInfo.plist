@@ -70,27 +70,30 @@ subject to the following restrictions:
             <string>text</string>
         </dict>
 
-        <!-- Inheritance ? Yes or No -->
-        <!-- This will load the file in "Yes" or "No" directories -->
+        <!-- Inheritance ?  None, Public, Protected or Private ? -->
+        <!-- This will load the files in "option" directory -->
         <dict>
             <key>Name</key>
-            <string>Inheritance ?</string>
+            <string>Inheritance Type</string>
             <key>Description</key>
-            <string>Does the new class inherite from a superclass ?</string>
+            <string>How does the new class inherits from its superclass ?</string>
 
             <key>Identifier</key>
-            <string>inheritanceBool</string>
+            <string>inheritanceType</string>
             <key>Type</key>
             <string>popup</string>
             <key>Default</key>
-            <string>No</string>
+            <string>None</string>
             <key>Values</key>
             <array>
-                <string>No</string>
-                <string>Yes</string>
+                <string>None</string>
+                <string>Public</string>
+                <string>Protected</string>
+                <string>Private</string>
             </array>
         </dict>
 
+        <!-- Superclass name -->
         <dict>
             <key>Name</key>
             <string>Superclass</string>
@@ -101,8 +104,18 @@ subject to the following restrictions:
             <string>superclassName</string>
             <key>Type</key>
             <string>text</string>
-        </dict>
 
+            <key>RequiredOptions</key>
+            <dict>
+                <key>inheritanceType</key>
+                <array>
+                    <string>Public</string>
+                    <string>Protected</string>
+                    <string>Private</string>
+                </array>
+            </dict>
+        </dict>
+        
     </array>
 </dict>
 </plist>

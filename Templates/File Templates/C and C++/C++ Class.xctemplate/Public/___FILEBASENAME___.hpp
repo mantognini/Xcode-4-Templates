@@ -9,6 +9,8 @@
 #ifndef ___PROJECTNAMEASIDENTIFIER_______FILEBASENAMEASIDENTIFIER___
 #define ___PROJECTNAMEASIDENTIFIER_______FILEBASENAMEASIDENTIFIER___
 
+#include "___VARIABLE_superclassName:identifier___.hpp"
+
 class ___VARIABLE_className:identifier___ : public ___VARIABLE_superclassName:identifier___ {
     <#instance variables#>
     
