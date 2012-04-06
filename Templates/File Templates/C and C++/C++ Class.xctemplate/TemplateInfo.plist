@@ -103,7 +103,7 @@ subject to the following restrictions:
             <key>Identifier</key>
             <string>superclassName</string>
             <key>Type</key>
-            <string>text</string>
+            <string>class</string>
 
             <key>RequiredOptions</key>
             <dict>
