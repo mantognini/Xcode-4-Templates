@@ -22,7 +22,7 @@ Templates
 
 ### C++ Class
 This template adds to your project two files : a source file and a header file with a basic template for a new C++ class.
-
+This template also allows you to create subclasses.
 
 Install
 -------
