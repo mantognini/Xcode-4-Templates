@@ -41,20 +41,32 @@ subject to the following restrictions:
     <key>Kind</key>
     <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
     
+    <!-- choose the logo of the template -->
     <key>MainTemplateFile</key>
     <string>___FILEBASENAME___.cpp</string>
 
     <key>Options</key>
     <array>
+        <!-- product name : based on the class name -->
+        <dict>
+            <key>Default</key>
+            <string>___VARIABLE_className:identifier___</string>
+            <key>Identifier</key>
+            <string>productName</string>
+            <key>Type</key>
+            <string>static</string>
+        </dict>
+
+        <!-- class name -->
         <dict>
             <key>Description</key>
             <string>The name of the class to create</string>
             <key>Identifier</key>
-            <string>productName</string>
+            <string>className</string>
             <key>Name</key>
             <string>Class Name</string>
             <key>NotPersisted</key>
-            <true/>
+            <false/>
             <key>Required</key>
             <true/>
             <key>Type</key>
