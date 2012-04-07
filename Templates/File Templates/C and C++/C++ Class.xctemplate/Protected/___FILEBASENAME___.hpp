@@ -11,11 +11,53 @@
 
 #include "___VARIABLE_superclassName:identifier___.hpp"
 
-class ___VARIABLE_className:identifier___ : protected ___VARIABLE_superclassName:identifier___ {
-    <#instance variables#>
+/*!
+ * \class ___VARIABLE_className:identifier___
+ *
+ * \author ___FULLUSERNAME___
+ *
+ * \brief <#brief description#>
+ *
+ * \details <#longer description#>
+ *
+ */
+class ___VARIABLE_className:identifier___ : protected ___VARIABLE_superclassName:identifier___
+{
+public :
     
-public:
-    <#member functions#>
+    /*!
+     * \brief <#brief description#>
+     *
+     * \details <#longer description#>
+     *
+     * \param <#param#> <#description#>
+     * \param <#param#> <#description#>
+     */
+    ___VARIABLE_className:identifier___(<#ctor parameters#>);
+    
+    /*!
+     * \brief <#brief description#>
+     *
+     * \details <#longer description#>
+     */
+    ~___VARIABLE_className:identifier___();
+    
+    /*!
+     * \brief <#brief description#>
+     *
+     * \details <#longer description#>
+     *
+     * \param <#param#> <#description#>
+     *
+     * \return <#description#>
+     */
+    <#return type#> <#function#>(<#type#> <#param#>) <#constness#>;
+    
+protected :
+    
+    
+private :
+    <#type#> <#field#>; ///< <#description#>
 };
 
 #endif
